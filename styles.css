@@ -2,6 +2,7 @@ body {
   margin: 0;
 }
 
+
 .information{
 	display: flex;
 	width: 100%;
@@ -24,3 +25,6 @@ body {
     display: flex;
   }
 
+.info div div{
+  padding: 10px;
+}
