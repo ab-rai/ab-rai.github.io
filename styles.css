@@ -18,5 +18,9 @@ body {
     height: 200px;
     text-align: right;
 	}
+
+  }
+  .about{
+    display: flex;
   }
 
