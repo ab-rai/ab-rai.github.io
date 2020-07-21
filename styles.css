@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  background: rgb(182, 197, 166);
+  background: rgb(164, 194, 204);
 }
 
 .information {
   display: flex;
   width: 100%;
-  background-color: rgb(129, 27, 57);
+  background-color: grey;
   height: 220px;
   justify-content: space-between;
   padding: 20px;
@@ -28,6 +28,13 @@ body {
   align-items: center;
   padding: 10px;
 }
-h2 {
-  color: teal;
+h2,
+h4 {
+  color: rgb(117, 20, 20);
+}
+h1 {
+  color: rgb(48, 5, 5);
+}
+h3 {
+  color: dodgerblue;
 }
