@@ -1,40 +1,54 @@
 body {
   display: grid;
+  margin: 10px;
   grid-template-columns: 20% auto;
   grid-template-rows: 15% auto 15%;
   grid-template-areas: 
       "head head"
-      "nav main"
+      "main main"
       "foot foot";
 }
 header{
   grid-area: head;
-  border:crimson 5px solid;
   background-color: cadetblue;
   display: flex;
   flex-direction: row;
+  display: grid;
+  grid-template-columns: 20% 20% auto;
+  grid-template-areas: "dp info1 info2";
+}
 
-}
-nav{
-  grid-area:nav;
-  border:rgb(10, 0, 2) 5px solid;
-  background-color:cadetblue;
-}
 footer{
   grid-area:foot;
-  border:rgb(72, 1, 238) 5px solid;
-  background-color: blueviolet;
+  
 }
 main{
   grid-area: main;
-  border:rgb(1, 231, 70) 5px solid;
-  
-  background-color: chocolate;
+  background-color: rgb(146, 87, 223);
   
 }
-
+.dp{
+  grid-area: dp;
+}
+.info1{
+  grid-area: info1;
+  padding-top: 30px ;
+  padding-bottom: 50px ;
+  
+}
+.info2{
+  grid-area: info2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 img {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
