@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Abhishek Rai | Software Engineer & Full Stack Developer Portfolio">
-  <title>Abhishek Rai - Full Stack Developer & Software Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abhishek Rai | Software Engineer & Full Stack Developer Portfolio">
+    <title>Abhishek Rai - Full Stack Developer & Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
   <!-- Header -->
   <header>
@@ -17,10 +18,10 @@
           <h1>Abhishek Rai</h1>
         </div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+          <li><a href="#projects"><i class="fas fa-cogs"></i> Projects</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -28,7 +29,7 @@
       <div class="container">
         <h2 class="hero-title">Software Engineer & Full Stack Developer</h2>
         <p class="hero-subtitle">Building innovative and scalable solutions. Let's build the future together.</p>
-        <a href="#contact" class="cta-button">Contact Me</a>
+        <a href="#contact" class="cta-button"><i class="fas fa-paper-plane"></i> Contact Me</a>
       </div>
     </section>
   </header>
@@ -37,7 +38,7 @@
   <section id="about" class="about">
     <div class="container">
       <h2 class="section-title">About Me</h2>
-      <p class="about-description">I am a Full Stack Developer with a passion for technology and solving real-world problems through code. With expertise in both front-end and back-end development, I create efficient, scalable, and maintainable solutions that make an impact. I have a strong background in ReactJS, Spring Boot, and more.</p>
+      <p class="about-description">I am a Full Stack Developer with a strong passion for creating impactful technology solutions. During my tenure at <i class="fab fa-amazon"></i> Amazon, I had the opportunity to work on Alexa Social, enhancing user engagement by building features that allow Alexa users to stay updated with their favorite public figures. My expertise spans both front-end and back-end development, with a particular focus on building scalable, reliable systems.</p>
     </div>
   </section>
 
@@ -45,29 +46,38 @@
   <section id="experience" class="experience">
     <div class="container">
       <h2 class="section-title">Work Experience</h2>
+      <!-- Let’s EV -->
       <div class="job">
-        <h3>Software Development Engineer - Let’s EV</h3>
+        <h3><i class="fas fa-building"></i> Software Development Engineer - Let’s EV</h3>
         <p class="job-title">July 2023 - Present | Gurugram, India</p>
         <ul class="job-responsibilities">
-          <li>Designed and built custom EV leasing solutions using Spring Boot and ReactJS, improving sales productivity by 100%.</li>
+          <li>Built custom EV leasing solutions using Spring Boot and ReactJS, improving sales productivity by 100%.</li>
           <li>Developed and managed a dynamic ReactJS dashboard, resulting in a 40% reduction in task completion time.</li>
           <li>Mentored and led a team of 5 developers, improving team performance and ensuring high-quality code delivery.</li>
+          <li>Optimized web performance, reducing page load times by 40% through lazy loading and code splitting.</li>
+          <li>Built scalable microservices architecture with Eureka discovery and Spring Cloud Config.</li>
         </ul>
       </div>
+      <!-- Amazon -->
       <div class="job">
-        <h3>Software Development Engineer - Amazon</h3>
+        <h3><i class="fab fa-amazon"></i> Software Development Engineer - Amazon</h3>
         <p class="job-title">March 2022 - April 2023 | Chennai, India</p>
         <ul class="job-responsibilities">
-          <li>Built innovative features for Alexa Social, improving user engagement by enabling real-time updates.</li>
-          <li>Enhanced user experience by implementing localization in 30+ languages, tailored to user preferences.</li>
+          <li>Built features for Alexa Social to enable users to stay updated with public figures.</li>
+          <li>Developed real-time updates for sports scores and stock performance.</li>
+          <li>Implemented localization to support 30+ languages and improve user experience.</li>
+          <li>Created templates for personalized Alexa updates using Guice dependency injection.</li>
+          <li>Wrote unit tests achieving 95% code coverage, enhancing code quality and reliability.</li>
         </ul>
       </div>
+      <!-- Infosys -->
       <div class="job">
-        <h3>Full Stack Developer - Infosys</h3>
+        <h3><i class="fas fa-building"></i> Full Stack Developer - Infosys</h3>
         <p class="job-title">November 2020 - March 2022 | Pune, India</p>
         <ul class="job-responsibilities">
-          <li>Revamped the GSTN Returns UI, improving user experience for tax filers.</li>
-          <li>Developed an Angular UI for online food ordering, ensuring compliance with new tax filing regulations.</li>
+          <li>Revamped the GSTN Returns UI using Angular, improving the user experience for millions of tax filers.</li>
+          <li>Developed a new Angular UI for the online food ordering section of the GST portal.</li>
+          <li>Worked with Spring Boot to implement tax calculations and optimizations in the back end.</li>
         </ul>
       </div>
     </div>
@@ -78,9 +88,10 @@
     <div class="container">
       <h2 class="section-title">University Projects</h2>
       <div class="project-card">
-        <h3>ChatBlock - Decentralized Messaging App</h3>
-        <p>Developed a decentralized messaging application utilizing blockchain technology for secure communication. Integrated proof-of-work algorithm for enhanced security.</p>
-        <p><strong>Technologies:</strong> ReactJS, Python, Flask, MySQL</p>
+        <h3><i class="fas fa-comments"></i> ChatBlock - Decentralized Messaging App</h3>
+        <p><strong>Description:</strong> ChatBlock is a decentralized messaging web application developed to enable secure communication using blockchain technology. The application stores data in the blockchain in JSON format and adds digital fingerprints to the blocks using the SHA‑256 hashing function. Users can log in and send messages through a user-friendly interface built with ReactJS. The app uses hashing to implement the proof-of-work algorithm and the mining process for enhanced security.</p>
+        <p><strong>Technologies:</strong> ReactJS, Python, Flask, MySQL, HTML, CSS</p>
+        <p><strong>Skills:</strong> Blockchain, Digital Fingerprinting, Hashing, Proof-of-Work Algorithm, UI Development, Report Writing, Presentation Skills</p>
       </div>
     </div>
   </section>
@@ -90,7 +101,7 @@
     <div class="container">
       <h2 class="section-title">Contact Me</h2>
       <p>Feel free to reach out for collaborations, opportunities, or just to connect!</p>
-      <a href="mailto:rrabhishekrai@gmail.com" class="cta-button">Get in Touch</a>
+      <a href="mailto:rrabhishekrai@gmail.com" class="cta-button"><i class="fas fa-envelope"></i> Get in Touch</a>
     </div>
   </section>
 
@@ -102,6 +113,5 @@
   </footer>
 
   <!-- Scroll to top button -->
-  <a href="#top" class="scroll-top-button">↑</a>
+  <a href="#top" class="scroll-top-button"><i class="fas fa-arrow-up"></i></a>
 </body>
-</html>

@@ -158,11 +158,13 @@ nav .nav-links a:hover {
 .project-card h3 {
   font-size: 1.8rem;
   color: #e3a857;
+  margin-bottom: 10px;
 }
 
 .project-card p {
   font-size: 1.1rem;
   color: #bbb;
+  margin-bottom: 10px;
 }
 
 /* Contact Section */
@@ -235,4 +237,38 @@ footer p {
   .scroll-top-button {
     display: block;
   }
+}
+
+/* Icon Adjustments */
+nav .nav-links a i,
+.cta-button i,
+.job h3 i,
+.project-card h3 i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* Header Styles */
+nav .nav-links li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Scroll to Top Button */
+.scroll-top-button {
+  font-size: 1.8rem;
+  display: block;
+  color: #121212;
+}
+
+/* Hover effects for icons */
+nav .nav-links a:hover i,
+.cta-button:hover i,
+.scroll-top-button:hover i {
+  color: #b78c41;
+}
+
+.section-title{
+  margin-bottom: 20px;
 }
