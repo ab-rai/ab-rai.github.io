@@ -35,6 +35,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 nav .logo h1 {
@@ -42,6 +43,7 @@ nav .logo h1 {
   font-weight: 700;
   font-size: 2.5rem;
   color: #e3a857;
+  margin-bottom: 20px; /* Space between logo and navigation */
 }
 
 nav .nav-links {
@@ -64,6 +66,37 @@ nav .nav-links a:hover {
   color: #e3a857;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack logo and nav items vertically */
+    align-items: center; /* Center the items */
+  }
+
+  nav .logo h1 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Space between logo and nav links */
+  }
+
+  nav .nav-links {
+    display: flex;
+    flex-direction: column; /* Stack the navigation items vertically */
+    align-items: center; /* Center nav items */
+    gap: 15px;
+    width: 100%; /* Ensure the nav items take full width */
+    padding-left: 0;
+  }
+
+  nav .nav-links li {
+    font-size: 1.5rem; /* Larger text for mobile view */
+  }
+
+  nav .nav-links a i {
+    margin-right: 10px; /* Add some space between the icon and the text */
+  }
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
   color: white;
@@ -126,7 +159,6 @@ nav .nav-links a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
-
 
 .profile-image:hover {
   transform: scale(1.1);
@@ -248,8 +280,15 @@ footer p {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   nav .nav-links {
-    display: block;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 20px; /* Space between items */
     text-align: center;
+  }
+
+  nav .nav-links li {
+    font-size: 1.5rem;
   }
 
   .hero-title {
